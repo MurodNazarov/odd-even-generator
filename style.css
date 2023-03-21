@@ -23,12 +23,41 @@ border-bottom: 1px solid ;
     font-size: 14px;
     margin-bottom: 10px;
 }
+.form{
+    margin-bottom: 0px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input{
+    padding: 5px 10px;
+    background-color: #03C988;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+}
+.input::placeholder{
+    color: #fff;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: #FC2947;
+    color: #fff;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
 .even{
     display: inline-block;
     background-color: #03C988;
     color: #fff;
     padding: 10px 10px;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 .odd{
     display: inline-block;
@@ -96,6 +125,19 @@ ul{
         font-size: 16px;
         font-weight: 700;
         color: #fff;
+    }
+    .form{
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn{
+        width: 70%;
+    }
+    .input{
+        width: 70%;
     }
   }
   @media (max-width: 601px) {
